@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Surprise</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: white;
+            color: #ff4e73;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4e73;
+            color: white;
+        }
+
+        #surprise1, #surprise2, #surprise3 {
+            display: none;
+            margin-top: 30px;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey... I have something for you 💌</h1>
+    <button onclick="showFirst()">Click Me</button>
+
+    <div id="surprise1">
+        ✨ gu khau ✨ <br>
+        <button onclick="showSecond()">Click Here for More</button>
+    </div>
+
+    <div id="surprise2">
+         feri gu khau😛 <br>
+        <button onclick="showThird()">Click Here for More</button>
+    </div>
+
+    <div id="surprise3">
+        💖 The real surprise is...  
+        <br><br>
+        Love you baby boy💖go to sleep😙
+    </div>
+
+    <script>
+        function showFirst() {
+            document.getElementById("surprise1").style.display = "block";
+        }
+
+        function showSecond() {
+            document.getElementById("surprise2").style.display = "block";
+        }
+
+        function showThird() {
+            document.getElementById("surprise3").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
